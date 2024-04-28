@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacteer Ons - Mijn Website</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        label {
+            font-weight: bold;
+        }
+        button {
+            background: #0056b3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #004494;
+        }
+        #map { height: 180px; }
+    
+    </style>
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img src="TMRWliving.jpg" alt="Mijn logo" width="100" height="75"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="diensten.html">Diensten</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="container mt-4">
+        <h1 class="mb-4">Neem Contact Op</h1>
+        <p>Wij staan altijd klaar om je te helpen met je vragen of feedback. Vul het onderstaande formulier in of bereik ons via de onderstaande contactgegevens.</p>
+        
+        <form action="#" method="post">
+            <label for="name">Naam:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Onderwerp:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Bericht:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="btn btn-primary">Verstuur</button>
+        </form>
+
+        <div class="contact-info mt-4">
+            <h3>Onze Contactgegevens</h3>
+            <p>📞 Telefoon: +32486613340</p>
+            <p>📧 E-mail: <a href="mailto:info@tmrwliving.be">info@tmrwliving.com</a></p>
+            <p>📍 Adres: Noorderplaats 2, 2000 Antwerpen</p>
+            <p>🕒 Openingstijden: Maandag tot Vrijdag - 9:00 tot 17:00</p>
+        </div>
+
+        <div class="social-media">
+            <h3>Volg ons ook op:</h3>
+            <p><a href="#" class="fa fa-facebook"></a></p>
+            <p><a href="#" class="fa fa-twitter"></a></p>
+            <p><a href="#" class="fa fa-instagram"></a></p>
+
+            <div id="map"></div>
+        </div>
+        
+    </main>
+    <footer class="text-center py-4 bg-dark text-white">
+        © 2024 Efekan Kanik. Alle rechten voorbehouden.
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+   
+<script>
+
+var map = L.map('map').setView([51.505, -0.09], 13);
+
+
+
+</script>

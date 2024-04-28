@@ -1,0 +1,103 @@
+/* Basis styling voor de hele pagina */
+body {
+    font-family: Arial, sans-serif; /* Basis lettertype */
+    color: #111111; /* Zwart tekstkleur volgens kleurenpalet */
+    background-color: #FFFFFF; /* Witte achtergrond */
+}
+
+/* Header styling */
+header {
+    background-color: #0072CE; /* Blauw voor de header achtergrond */
+    color: white;
+}
+
+header a.navbar-brand,
+header a.nav-link {
+    color: white; /* Witte tekst voor navigatie links */
+}
+
+header a.nav-link:hover {
+    color: #dddddd; /* Lichtere wit wanneer hovered */
+}
+
+/* Stijl voor de titels */
+h1, h2 {
+    color: #0072CE; /* Blauw voor titels */
+}
+
+/* Stijlen voor de footer */
+footer {
+    background-color: #111111; /* Zwart voor de footer achtergrond */
+    color: white;
+}
+
+footer a {
+    color: #0072CE; /* Blauwe links in de footer */
+    text-decoration: none; /* Geen onderstreping */
+}
+
+footer a:hover {
+    color: #FFFFFF; /* Wit wanneer hovered */
+}
+
+/* Knoppen en links */
+.btn-primary {
+    background-color: #0072CE; /* Blauw voor primaire knoppen */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056a3; /* Donkerder blauw wanneer hovered */
+}
+
+/* Aanpassingen voor formulieren */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Volledige breedte van het container element */
+    padding: 8px; /* Padding voor input velden */
+    margin: 4px 0; /* Margin voor een beetje ruimte rondom velden */
+    box-sizing: border-box; /* Box sizing om padding binnen de width te houden */
+}
+
+/* Responsive kolommen voor diensten */
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 100%; /* Volledige breedte op kleine schermen */
+        max-width: 100%;
+    }
+}
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+
